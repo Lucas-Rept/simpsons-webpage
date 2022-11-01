@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+    background-color: #c141bdf3;
+    color: white;
+    align-items: center;
+    height: 3rem;
+}
+
+nav li{
+    position: relative;
+    cursor: pointer;
+}
+
+nav li::after{
+    transition: 0.3s;
+    content: "";
+    background-color: white;
+    display: inline-block;
+    height: 8px;
+    width: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav li:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+
+header{
+    padding-top: 4rem;
+    min-height: calc(100vh - 4rem);
+    background-image: url(./imagens/os_simpsons_-_temporada_32_star_.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    margin-top: 5rem;
+    background-color: #c141bdd7;
+    align-self: start;
+    width: fit-content;
+    font-size: 4rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 0 30px 30px 0;
+}
+
+.jargan{
+    background-color: #c141bdd7;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 55%;
+    border-radius: 20px 20px 0 0;
+}
+
+@keyframes donut{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+#donuts{
+    position: absolute;
+    right: 6%;
+    top: 3rem;
+    width: 33%;
+    animation-name: donut;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#section1{
+    background-image: url(imagens/tdonuts.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#section1 article{
+    width: 30%;
+    color: white;
+    background-color: #c141bdd7;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+#section1 h2{
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+@keyframes homer{
+    from{
+        transform: translateX(-10%);
+    }
+    to{
+        transform: translateX(10%);
+    }
+}
+
+#homer{
+    align-self: end;
+    object-fit: cover;
+    height: 280px;
+    object-position: 0 10px;
+    animation-name: homer;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#section2{
+    position: relative;
+    background-image: url(imagens/donutstemp.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+#section2 article{
+    background-color: white;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section2 img{
+    width: 45%;
+    object-position: -40px 20px;
+    align-self: flex-end;
+    
+}
+
+#section2 h2{
+    font-size: 2rem;
+    color: #C141BC;
+    margin-bottom: 2rem;
+}
+
+#section2 p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+#section3{
+    position: relative;
+    background-image: url(imagens/donutstemp.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#section3 article{
+    background-color: white;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section3 img{
+    width: 30%;
+    object-position: 0px 20px;
+    align-self: flex-end;
+    
+}
+
+#section3 h2{
+    font-size: 2rem;
+    color: #C141BC;
+    margin-bottom: 2rem;
+}
+
+#section3 p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+#endSection{
+    position: relative;
+    padding: 10rem;
+    background-image: url(imagens/image\ 12.jpg);
+    background-size: cover;
+}
+
+#endSection h2{
+    font-size: 2rem;
+    color: #C141BC;
+    margin-bottom: 1rem;
+}
+
+#endSection p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#container{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5rem;
+    text-align: justify;
+}
+
+#maggiePhoto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+}
+
+
+#bart{
+    position: relative;
+}
+
+#bart img{
+    position: absolute;
+    height: 20rem;
+    top: 0;
+    transform: translateX(-96%);
+    z-index: 0;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#dbnone{
+    display: none;
+}
+
+@media screen and (max-width: 1050px){
+
+    header{
+        justify-content: flex-end;
+    }
+
+    .title{
+        align-self: center;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 1rem;
+        border-radius: 0;
+    }
+
+    .jargan{
+        background-color: #c141bdd7;
+        color: white;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        border-radius: 0 0 0 0;
+        text-align: center;
+    }
+
+
+    #section2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #section2 article{
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    #section2 img{
+        width: 70%;
+        align-self: center;
+    }
+
+    #section3{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #section3 img{
+        align-self: center;
+        margin-top: 2rem;
+        width: 40%;
+    }
+
+    #section3 article{
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    #section2 p{
+        font-size: 1rem;
+    }
+
+    #section3 p{
+        font-size: 1rem;
+    }
+
+    #section1{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    #section1 p{
+        font-size: 1rem;
+    }
+
+    #section1 #homer{
+        align-self: center;
+        animation: none;
+        margin-top: 2rem;
+    }
+
+    #section1 article{
+        width: 90%;
+    }
+
+    #endSection{
+
+        padding: 0;
+        padding: 2rem 0 14rem 0;
+    }
+
+    #container{
+        width: 88.4vw;
+        margin: auto;
+        border-radius: 10px;
+        padding: 3rem;
+    }
+
+    #container p{
+        font-size: 1rem;
+    }
+
+    #bart img{
+        display: none;
+    }
+
+    #endSection #dbnone{
+        position: static;
+        display: block;
+        transform: translateX(0);
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-image: url(./imagens/cellphne.jpg);
+    }
+    
+}
